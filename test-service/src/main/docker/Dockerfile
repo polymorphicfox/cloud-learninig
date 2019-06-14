@@ -4,8 +4,5 @@ RUN mkdir -p /usr/local/test-service
 ADD @project.build.finalName@.jar /usr/local/test/test-service/
 ADD run.sh run.sh
 RUN chmod +x run.sh
-#CMD cd home
 CMD ./run.sh
-#CMD java -jar /usr/local/test-service/@project.build.finalName@.jar
-#CMD java -version
 
